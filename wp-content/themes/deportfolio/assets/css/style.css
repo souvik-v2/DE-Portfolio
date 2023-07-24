@@ -34,6 +34,9 @@ body {
   margin-top: 5px;
 }
 
+#header .active {
+  border-bottom: 1px solid #B31313;
+}
 #header{
   top:0px;
 }
@@ -78,8 +81,9 @@ body {
   background: linear-gradient(to left top, rgb(189, 193, 199), white);
 }
 .btn {
-  padding: 20px;
+  padding: 20px 30px;
   cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
@@ -114,4 +118,17 @@ body {
 }
 .description p {
   margin: 50px 0px;
+}
+particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.preloader {
+  position: absolute;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png);
 }
